@@ -12,5 +12,9 @@
 			event.preventDefault(); 
 			event.stopPropagation();
 		});
+		$("select[name='reason']").change(function() { 
+		   $(".service").addClass("hidden");
+		   $('#'+$(this).val()).removeClass("hidden");
+		})
 	});
 })(jQuery);
