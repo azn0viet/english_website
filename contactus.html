@@ -42,12 +42,12 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="#">Lessons</a></li>
 					<li><a href="#">Method</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="aboutus.html">About us</a></li>
-					<li><a href="contactus.html">Contact us (tmp)</a></li>
+					<li class="active"><a href="contactus.html">Contact us (tmp)</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Dropdown Link 1</a></li>
@@ -97,17 +97,59 @@
 					</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
-		<h1>Jade - node template engine</h1>
-		<div id="container" class="col">
-			<p>You are amazing</p>
-			<p>
-				Jade is a terse and simple
-				templating language with a
-				strong focus on performance
-				and powerful features.
-			</p>
-			<a href="http://www.google.fr" class="test">lien</a>
-			<a class="btn btn-success troll">hello!</a>
-		</div>
+		
+		<h1>Contact us</h1>
+		
+		<br>
+		
+		<h3>By the contact form</h3>
+		<form target="#">
+			<label for="reason">Reason of the contact:</label> 	
+			<select name="reason" size="1">
+				<option>More information
+				<option value="documentstranslation">Documents translation
+				<option value="interpreter">Interpreter
+				<option value="roomsrent">Rooms rent
+			</select><br><br>
+			
+			<div id="services">
+				<div id="documentstranslation" class="hidden">
+					<h4>Documents translations</h4>
+					<p>Something...</p>
+				</div>
+				
+				<div id="interpreter" class="hidden">
+					<h4>Interpreter</h4>
+					<p>Something...</p>
+				</div>
+				
+				<div id="roomsrent" class="hidden">
+					<h4>Rooms rent</h4>
+					<p>Something...</p>
+				</div>
+			</div>
+			
+			
+			
+			<label for="name">Enter your name: </label>
+			<input type="text" name="name"><br>
+			
+			<label for="email">Enter your email address: </label>
+			<input type="email" name="email"><br>
+			
+			<label for="message">Your message: </label>
+			<textarea rows="5"></textarea><br>
+			
+			<input type="submit" value="Send">
+		</form>
+		
+		<h3>By phone</h3>
+		<p>03.88.93.39.74</p>
+		
+		<h3>By moving to us</h3>
+		<p>3a, marché aux grains<br>
+		Haguenau, 67500<br>
+		France</p>
+	
 	</body>
 </html>
